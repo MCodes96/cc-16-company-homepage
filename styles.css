@@ -39,6 +39,7 @@ header {
   top: 0;
   z-index: 10;
   background-color: white;
+  overflow: hidden;
 }
 
 .logo {
@@ -69,7 +70,7 @@ nav ul {
 
 nav li a {
   text-decoration: none;
-  padding: 1.45rem;
+  padding: 100% 1.45rem;
   color: black;
   font-weight: bold;
   overflow: hidden;
@@ -141,8 +142,8 @@ nav li a:hover {
   margin-top: 3rem;
 }
 .image-container img {
-  min-width: 150px;
-  min-height: 150px;
+  min-width: 200px;
+  min-height: 200px;
   background-color: red;
 }
 
