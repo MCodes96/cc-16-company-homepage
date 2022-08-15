@@ -131,6 +131,20 @@ nav li a:hover {
   color: white;
 }
 
+.mission-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mission-image img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 20rem;
+  height: 20rem;
+  margin-left: 2rem;
+}
+
 /* Product section */
 
 .image-container {
@@ -142,8 +156,8 @@ nav li a:hover {
   margin-top: 3rem;
 }
 .image-container img {
-  min-width: 200px;
-  min-height: 200px;
+  width: 200px;
+  height: 200px;
   background-color: red;
 }
 
@@ -172,10 +186,13 @@ nav li a:hover {
 
 .team-member img {
   border-radius: 50%;
+  object-fit: cover;
   background-color: white;
   width: 150px;
   height: 150px;
 }
+
+/* footer */
 
 footer {
   width: 100vw;
@@ -184,4 +201,73 @@ footer {
   align-items: center;
   justify-content: center;
   font-weight: bold;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1060px) {
+  .mission-image {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  #team-section .center {
+    width: 80vw;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  header h1 {
+    display: none;
+  }
+
+  .center {
+    width: 80vw;
+  }
+
+  .team {
+    flex-direction: column;
+  }
+
+  .team-member {
+    margin: 30px 0;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .header-logo-title {
+    display: none;
+  }
+
+  header {
+    justify-content: center;
+  }
+
+  #welcome-section {
+    flex-direction: column;
+  }
+
+  .text-container {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  nav li {
+    font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav {
+    margin: 0;
+  }
+
+  nav li a {
+    padding: 100% 1.2rem;
+  }
 }
