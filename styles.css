@@ -8,6 +8,10 @@
   font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100vw;
 }
@@ -120,9 +124,8 @@ nav li a:hover {
 
 .welcome-btn:hover {
   box-shadow: 0 2px 8px black;
-  padding: 22px 42px;
+  transform: scale(1.1);
   transition: 0.3s;
-  font-size: 1.2rem;
 }
 
 /* About us Section */
@@ -158,7 +161,7 @@ nav li a:hover {
 .image-container img {
   width: 200px;
   height: 200px;
-  background-color: red;
+  object-fit: cover;
 }
 
 /* Team Section */
